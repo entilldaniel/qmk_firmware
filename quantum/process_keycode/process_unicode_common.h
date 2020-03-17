@@ -36,7 +36,7 @@
 // Comma-delimited, ordered list of input modes selected for use (e.g. in cycle)
 // Example: #define UNICODE_SELECTED_MODES UC_WINC, UC_LNX
 #ifndef UNICODE_SELECTED_MODES
-  #define UNICODE_SELECTED_MODES -1
+  #define UNICODE_SELECTED_MODES UC_LNX
 #endif
 
 // Whether input mode changes in cycle should be written to EEPROM
@@ -188,3 +188,4 @@ bool process_unicode_common(uint16_t keycode, keyrecord_t *record);
 #define UC_RCBR	UC(0x007D)
 #define UC_TILD	UC(0x007E)
 #define UC_DEL	UC(0x007F)
+

@@ -109,7 +109,7 @@ void unicode_input_finish(void) {
     unregister_code(UNICODE_KEY_OSX);
     break;
   case UC_LNX:
-    tap_code(KC_SPC);
+    tap_code(KC_ENTER);
     break;
   case UC_WIN:
     unregister_code(KC_LALT);
