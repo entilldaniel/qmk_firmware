@@ -294,3 +294,14 @@ uint32_t layer_state_set_user(uint32_t state) {
     return update_tri_layer_state(state, _LOWER, _RAISE, _ADJUST);
 }
 
+
+void keyboard_post_init_user(void) {
+  planck_ez_right_led_level(60);
+  planck_ez_left_led_level(60);
+}
+
+
+
+
+
+
